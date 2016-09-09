@@ -197,7 +197,7 @@ address {
 .nav-main__link {
   display: inline-block;
   position: relative;
-  padding: 0.25em 0 0.25em 1.5em; /* 5px 0 */
+  padding: 0.25em 0 0.25em 1.7em; /* 5px 0 5px 34px*/
 }
 
 .nav-main__link::before {
@@ -207,9 +207,8 @@ address {
   position: absolute;
   width: 1em; /* 20px */
   height: 1em; /* 20px */
-  top: 0.35em; /* 7px */
+  top: 0.4em; /* 8px */
   left: 0;
-  margin-right: 0.5em;
 }
 
 .nav-main__link--development::before {
