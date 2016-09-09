@@ -173,6 +173,10 @@ address {
   border-radius: 50%;
 }
 
+.logo__img {
+  width: 9em; /* 180px */
+}
+
 
 
 /* NAV MAIN
