@@ -1,0 +1,28 @@
+{
+  "name": "mvsde.github.io",
+  "version": "1.0.0",
+  "description": "GitHub Pages for mvsde.com",
+  "scripts": {
+    "build": "npm run css & npm run img",
+    "watch": "postcss -w -u autoprefixer -u cssnano -c src/css/config.json -o css/styles.css src/css/styles.css",
+    "css": "postcss -u autoprefixer -u cssnano -c src/css/config.json -o css/styles.css src/css/styles.css",
+    "img": "rimraf img && imagemin src/img/** --out-dir=img"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvsde/mvsde.github.io.git"
+  },
+  "author": "Fynn Becker <info@fynn-becker.de>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mvsde/mvsde.github.io/issues"
+  },
+  "homepage": "https://github.com/mvsde/mvsde.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "cssnano": "^3.7.4",
+    "imagemin-cli": "^3.0.0",
+    "postcss-cli": "^2.6.0",
+    "rimraf": "^2.5.4"
+  }
+}
