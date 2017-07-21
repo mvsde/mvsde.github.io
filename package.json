@@ -4,8 +4,8 @@
   "description": "GitHub Pages for mvsde.com",
   "scripts": {
     "build": "npm run css & npm run img",
-    "watch": "postcss -w -u autoprefixer -u cssnano -c src/css/config.json -o css/styles.css src/css/styles.css",
-    "css": "postcss -u autoprefixer -u cssnano -c src/css/config.json -o css/styles.css src/css/styles.css",
+    "watch": "postcss -w -u autoprefixer -c src/css/config.json -o css/styles.css src/css/styles.css",
+    "css": "postcss -m false -u autoprefixer -u cssnano -c src/css/config.json -o css/styles.css src/css/styles.css",
     "img": "rimraf img && imagemin src/img/** --out-dir=img"
   },
   "repository": {
@@ -19,10 +19,10 @@
   },
   "homepage": "https://github.com/mvsde/mvsde.github.io#readme",
   "devDependencies": {
-    "autoprefixer": "^6.4.1",
+    "autoprefixer": "^7.1.2",
     "cssnano": "^3.7.4",
     "imagemin-cli": "^3.0.0",
-    "postcss-cli": "^2.6.0",
+    "postcss-cli": "^4.1.0",
     "rimraf": "^2.5.4"
   }
 }
